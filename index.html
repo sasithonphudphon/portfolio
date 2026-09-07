@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasithon Phudphon | Portfolio</title>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sasithon Phudphon (Toey) | Communications &amp; Events Coordinator">
+  <meta property="og:description" content="Bridging bilingual organizational communications, master calendar operations, and multicultural hospitality.">
+  <meta property="og:image" content="https://i.postimg.cc/Ssz7WkKb/5B7A9758-(2).jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/0284C7/briefcase.png">
+
+  <!-- Bootstrap 5.3 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts: Prompt (Fallback สำหรับ Sukhumvit Set) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-th">
+
+  <!-- 1. Responsive Navbar with Left-Aligned Mobile Hamburger Menu -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-fluid px-0">
+          
+          <!-- Brand Logo -->
+          <a class="brand-badge" href="#hero">
+            <span class="brand-dot"></span>
+            <span>SASITHON P.</span>
+          </a>
+
+          <!-- Hamburger Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+
+          <!-- Navigation Links & Actions (Left-aligned on mobile) -->
+          <div class="collapse navbar-collapse justify-content-end" id="headerNav">
+            <ul class="navbar-nav align-items-start align-items-lg-center gap-1 my-3 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#remits">
+                  <span data-lang="th">ขอบเขตงาน</span>
+                  <span data-lang="en">Core Remits</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cases">
+                  <span data-lang="th">กรณีศึกษา</span>
+                  <span data-lang="en">Case Studies</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                  <span data-lang="th">ระบบงาน &amp; เครื่องมือ</span>
+                  <span data-lang="en">Tech &amp; Systems</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dossier">
+                  <span data-lang="th">ประวัติการทำงานและการศึกษา</span>
+                  <span data-lang="en">Resume &amp; Dossier</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  <span data-lang="th">ติดต่อ</span>
+                  <span data-lang="en">Contact</span>
+                </a>
+              </li>
+
+              <!-- Resume Button -->
+              <li class="nav-item ms-lg-2 my-2 my-lg-0 text-start">
+                <a href="https://drive.google.com/file/d/1LN8cl0fSexqHNaAAQazFpivI8j1rat_r/view?usp=sharing" class="btn btn-brand-primary btn-sm px-3 text-start" target="_blank" download>
+                  <i class="bi bi-file-earmark-person me-1"></i>
+                  <span data-lang="th">ดาวน์โหลด Resume</span>
+                  <span data-lang="en">Download Resume</span>
+                </a>
+              </li>
+
+              <!-- Language Switcher -->
+              <li class="nav-item ms-lg-2 mt-1 mt-lg-0 text-start">
+                <div class="d-flex gap-1 justify-content-start">
+                  <button type="button" id="btn-th" class="header-lang-btn active" onclick="setLanguage('th')">TH</button>
+                  <button type="button" id="btn-en" class="header-lang-btn" onclick="setLanguage('en')">EN</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section (Mobile: Photo Top / Desktop: Photo Right) -->
+  <section id="hero" class="hero-split-section">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        
+        <!-- Profile Picture Column -->
+        <div class="col-lg-5 order-1 order-lg-2">
+          <div class="hero-profile-card">
+            <div class="hero-photo-frame">
+              <img src="https://i.postimg.cc/Ssz7WkKb/5B7A9758-(2).jpg" alt="เตย ศศิธร ผุดผ่อน (Toey Sasithon Phudphon)">
+            </div>
+            
+            <div class="floating-profile-badge">
+              <i class="bi bi-award-fill text-warning fs-4"></i>
+              <div>
+                <div class="fw-bold small mb-0">
+                  <span data-lang="th">นายกองค์การบริหาร องค์การนักศึกษา</span>
+                  <span data-lang="en">President Student Union</span>
+                </div>
+                <div class="text-muted smaller">
+                  <span data-lang="th">ม.อ.ภูเก็ต (ปีการศึกษา 2563)</span>
+                  <span data-lang="en">PSU Phuket (Academic Year 2020)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+          
+          <div class="mb-3">
+            <span class="badge-role-lead">
+              <i class="bi bi-stars"></i>
+              <span data-lang="th">ผสานงานบริหารเลขาฯ · จิตวิทยาบริการ · การจัดการอีเวนต์</span>
+              <span data-lang="en">Executive Administration · Hospitality Care · Event Logistics</span>
+            </span>
+          </div>
+
+          <h1 class="display-5 fw-bold mb-3 lh-sm text-dark">
+            <span data-lang="th">การสื่อสารองค์กรสองภาษา การบริหารกำหนดการ และการประสานงานกิจกรรม</span>
+            <span data-lang="en">Bilingual Organizational Communications, Master Scheduling &amp; Event Coordination</span>
+          </h1>
+
+          <p class="h4 text-primary fw-medium mb-3">
+            <span data-lang="th">ศศิธร ผุดผ่อน (เตย)</span>
+            <span data-lang="en">Sasithon Phudphon (Toey)</span>
+          </p>
+
+          <p class="text-muted mb-4 lead fs-6 mx-auto mx-lg-0" style="max-width: 620px;">
+            <span data-lang="th">ผสานความละเอียดรอบคอบในงานเอกสารและการตรวจทานภาษาจาก<strong>งานเลขาฯ</strong> วาทศิลป์และการบริการระดับสากลจาก<strong>งานโรงแรม</strong> เข้ากับทักษะการบริหารพื้นที่และคิวงานจาก<strong>งานกิจกรรมมหาวิทยาลัย</strong> พร้อมพื้นฐานปริญญาตรี<strong>ธุรกิจอิเล็กทรอนิกส์ (B.Sc.)</strong> เพื่อขับเคลื่อนระบบงานสื่อสารองค์กร การบริหารจัดการปฏิทินส่วนกลาง และการประสานงานกิจกรรมอย่างราบรื่น</span>
+            <span data-lang="en">Bridging executive secretarial precision, multicultural hospitality care, and campus event logistics with an Electronic Business (B.Sc.) foundation—dedicated to facilitating seamless organizational communications, master calendar operations, and comprehensive event coordination.</span>
+          </p>
+
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap mb-4">
+            <a href="#cases" class="btn btn-brand-primary btn-lg">
+              <i class="bi bi-journal-check me-1"></i>
+              <span data-lang="th">ชมกรณีศึกษาและผลงาน</span>
+              <span data-lang="en">View Case Studies</span>
+            </a>
+            <a href="#contact" class="btn btn-brand-outline btn-lg">
+              <i class="bi bi-chat-left-dots me-1"></i>
+              <span data-lang="th">ติดต่อสัมภาษณ์งาน</span>
+              <span data-lang="en">Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Quick Proof Points -->
+          <div class="pt-2 d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 gap-md-4 text-muted small">
+            <div>
+              <i class="bi bi-check2-circle text-primary me-1"></i>
+              <span data-lang="th">ตรวจทานภาษา 2 ภาษา (TH/EN)</span>
+              <span data-lang="en">Bilingual Proofreading &amp; Copy</span>
+            </div>
+            <div>
+              <i class="bi bi-check2-circle text-primary me-1"></i>
+              <span data-lang="th">บริหารปฏิทินส่วนกลาง ป้องกันคิวชน</span>
+              <span data-lang="en">Master Calendar Conflict Resolution</span>
+            </div>
+            <div>
+              <i class="bi bi-check2-circle text-primary me-1"></i>
+              <span data-lang="th">การบริหารคิวงานและสถานที่จัดกิจกรรม</span>
+              <span data-lang="en">Event Logistics &amp; Run-sheet Control</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Core Remits (Bento 3-Pillar Cards) -->
+  <section id="remits" class="py-5 bg-white border-bottom">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-2">
+          <span data-lang="th">ขอบเขตความเชี่ยวชาญ</span>
+          <span data-lang="en">Operational Remits</span>
+        </h2>
+        <p class="text-muted mb-0">
+          <span data-lang="th">การผสมผสานทักษะที่ตอบสนองความรับผิดชอบหลักของตำแหน่งงานได้อย่างลงตัว</span>
+          <span data-lang="en">Comprehensive integration across communications, event scheduling, and hospitality</span>
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Pillar 1: Whole-School & Corporate Comms -->
+        <div class="col-lg-4">
+          <div class="remit-card">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="remit-icon-wrap"><i class="bi bi-newspaper"></i></div>
+              <span class="remit-pill">
+                <span data-lang="th">งานสื่อสารองค์กร</span>
+                <span data-lang="en">Communications</span>
+              </span>
+            </div>
+            <h4 class="fw-bold mb-2">
+              <span data-lang="th">การสื่อสารองค์กรและจดหมายข่าว</span>
+              <span data-lang="en">Institutional Communications</span>
+            </h4>
+            <p class="text-muted small mb-3">
+              <span data-lang="th">ประสานข้อมูลจากหน่วยงานภายในเพื่อจัดทำจดหมายข่าวและสื่อประชาสัมพันธ์ ตรวจทานภาษา ไวยากรณ์ และควบคุม Brand Voice สองภาษา พร้อมบริหารจัดการช่องทางรับเรื่องอย่างรวดเร็ว</span>
+              <span data-lang="en">Gathering departmental updates to produce official newsletters, conducting rigorous bilingual proofreading, maintaining brand voice, and managing correspondence triage efficiently.</span>
+            </p>
+            <div class="border-top pt-3 text-muted smaller">
+              <i class="bi bi-arrow-right-short text-primary fs-6 me-1"></i>
+              <span data-lang="th"><strong>จุดเด่น:</strong> ความละเอียดรอบคอบระดับงานเลขาฯ บริหาร</span>
+              <span data-lang="en"><strong>Strength:</strong> Executive secretarial precision &amp; grammar checks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Master Calendar & Venue Logistics -->
+        <div class="col-lg-4">
+          <div class="remit-card">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="remit-icon-wrap"><i class="bi bi-calendar3"></i></div>
+              <span class="remit-pill">
+                <span data-lang="th">การบริหารกำหนดการ</span>
+                <span data-lang="en">Scheduling &amp; Logistics</span>
+              </span>
+            </div>
+            <h4 class="fw-bold mb-2">
+              <span data-lang="th">การบริหารปฏิทินและพื้นที่จัดงาน</span>
+              <span data-lang="en">Calendar &amp; Event Logistics</span>
+            </h4>
+            <p class="text-muted small mb-3">
+              <span data-lang="th">ดูแลระบบปฏิทินส่วนกลาง ป้องกันตารางชนกัน จองสถานที่ ประสานงานทีมอาคารสถานที่ ทีมไอที โสตทัศนูปกรณ์ ป้ายบอกทาง และควบคุมคิวงานกิจกรรมให้ตรงเวลา</span>
+              <span data-lang="en">Administering master organization calendars to systematically prevent schedule overlaps, allocating spaces, coordinating IT/facilities, and managing event run-sheets.</span>
+            </p>
+            <div class="border-top pt-3 text-muted smaller">
+              <i class="bi bi-arrow-right-short text-primary fs-6 me-1"></i>
+              <span data-lang="th"><strong>จุดเด่น:</strong> ประสบการณ์คุมคิวและสถานที่งานกิจกรรมมหาวิทยาลัย</span>
+              <span data-lang="en"><strong>Strength:</strong> Large-scale event logistics &amp; run-sheet command</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Hospitality & Stakeholder Care -->
+        <div class="col-lg-4">
+          <div class="remit-card">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="remit-icon-wrap"><i class="bi bi-people"></i></div>
+              <span class="remit-pill">
+                <span data-lang="th">การต้อนรับและบริการ</span>
+                <span data-lang="en">Hospitality Care</span>
+              </span>
+            </div>
+            <h4 class="fw-bold mb-2">
+              <span data-lang="th">ชุมชนสัมพันธ์และการต้อนรับระดับสากล</span>
+              <span data-lang="en">Community &amp; Stakeholder Hospitality</span>
+            </h4>
+            <p class="text-muted small mb-3">
+              <span data-lang="th">ต้อนรับผู้เข้าร่วมงาน แขกคนสำคัญ และผู้รับบริการด้วยมาตรฐานงานบริการระดับโรงแรม ประสานงานผู้มีส่วนได้ส่วนเสีย และรับฟังคลี่คลายข้อกังวลด้วยจิตวิทยาบริการที่นุ่มนวล</span>
+              <span data-lang="en">Delivering five-star hospitality for visitors, dignitaries, and community members, coordinating stakeholders, and resolving concerns with empathy and cultural tact.</span>
+            </p>
+            <div class="border-top pt-3 text-muted smaller">
+              <i class="bi bi-arrow-right-short text-primary fs-6 me-1"></i>
+              <span data-lang="th"><strong>จุดเด่น:</strong> จิตวิทยาบริการและมารยาทต้อนรับจากงานโรงแรม</span>
+              <span data-lang="en"><strong>Strength:</strong> Multicultural hospitality tact &amp; empathy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Featured Case Studies & Experience (รวมผลงานอีเวนต์มหาวิทยาลัยและการทำงาน) -->
+  <section id="cases" class="py-5" style="background-color: var(--bg-subtle);">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-2">
+          <span data-lang="th">กรณีศึกษาและผลงานที่ตรงกับบทบาท</span>
+          <span data-lang="en">Targeted Competencies &amp; Case Studies</span>
+        </h2>
+        <p class="text-muted mb-0">
+          <span data-lang="th">ตัวอย่างการประยุกต์ทักษะจริง ทั้งงานสื่อสารสองภาษา การบริหารปฏิทิน และการจัดอีเวนต์ขนาดใหญ่</span>
+          <span data-lang="en">Demonstrated capabilities spanning bilingual correspondence, master scheduling, and on-site event operations</span>
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Case 1: Newsletter & Editorial -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card-redesign">
+            <div class="case-header-strip">
+              <span class="badge bg-primary-subtle text-primary border small">
+                <span data-lang="th">งานจดหมายข่าว &amp; สื่อองค์กร</span>
+                <span data-lang="en">Newsletter &amp; Editorial</span>
+              </span>
+              <span class="text-muted smaller">
+                <span data-lang="th">เน้นความประณีตของภาษา</span>
+                <span data-lang="en">Editorial Focus</span>
+              </span>
+            </div>
+            <div class="case-body-redesign">
+              <h5 class="fw-bold mb-2">
+                <span data-lang="th">ระบบรวบรวมเนื้อหาและจัดทำจดหมายข่าวสองภาษา</span>
+                <span data-lang="en">Newsletter Compilation &amp; Editorial Workflow</span>
+              </h5>
+              <p class="text-muted small flex-grow-1">
+                <span data-lang="th">วางกรอบเวลา Cut-off Date สำหรับรับข่าวสารจากฝ่ายต่าง ๆ ตรวจสอบความถูกต้องของวันเวลา ไวยากรณ์สองภาษา (TH/EN) และความสอดคล้องตามอัตลักษณ์องค์กร</span>
+                <span data-lang="en">Established submission timelines, conducted thorough bilingual proofreading, and maintained strict compliance with corporate branding and communication guidelines.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="tag-soft">
+                  <span data-lang="th">ตรวจทาน 2 ภาษา</span>
+                  <span data-lang="en">Bilingual Proofreading</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">จัดเลย์เอาต์ Canva</span>
+                  <span data-lang="en">Canva Layout</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">คุม Brand Voice</span>
+                  <span data-lang="en">Brand Voice Tone</span>
+                </span>
+              </div>
+              <div class="border-top pt-2 text-primary smaller fw-medium">
+                <i class="bi bi-shield-check me-1"></i>
+                <span data-lang="th">ทักษะ: ความประณีตจากงานเลขาฯ + การร่างหนังสือทางการ</span>
+                <span data-lang="en">Secretarial precision &amp; executive correspondence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2: Master Calendar Hub -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card-redesign">
+            <div class="case-header-strip">
+              <span class="badge bg-info-subtle text-info-emphasis border small">
+                <span data-lang="th">ศูนย์กลางปฏิทินส่วนกลาง</span>
+                <span data-lang="en">Master Calendar Hub</span>
+              </span>
+              <span class="text-muted smaller">
+                <span data-lang="th">ป้องกันตารางทับซ้อน</span>
+                <span data-lang="en">Conflict Prevention</span>
+              </span>
+            </div>
+            <div class="case-body-redesign">
+              <h5 class="fw-bold mb-2">
+                <span data-lang="th">การบริหารปฏิทินส่วนกลางและการป้องกันตารางชนกัน</span>
+                <span data-lang="en">Master Calendar Synchronization &amp; Scheduling</span>
+              </h5>
+              <p class="text-muted small flex-grow-1">
+                <span data-lang="th">จัดโครงสร้างปฏิทินแบบแบ่งเลเยอร์สีบน Google Calendar ตรวจจับการทับซ้อนของห้องประชุมและพื้นที่ส่วนกลาง พร้อมแจ้งเตือนกำหนดการสำคัญล่วงหน้าอย่างเป็นระบบ</span>
+                <span data-lang="en">Administered synchronized master calendars, systematically prevented room and resource overlaps, and maintained up-to-date schedule visibility across departments.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="tag-soft">Google Calendar</span>
+                <span class="tag-soft">
+                  <span data-lang="th">จัดสรรพื้นที่ส่วนกลาง</span>
+                  <span data-lang="en">Venue Allocation</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">ควบคุม Deadline</span>
+                  <span data-lang="en">Deadline Control</span>
+                </span>
+              </div>
+              <div class="border-top pt-2 text-primary smaller fw-medium">
+                <i class="bi bi-calendar-check me-1"></i>
+                <span data-lang="th">ทักษะ: การจัดการข้อมูลแบบมีโครงสร้าง (วท.บ. ธุรกิจอิเล็กทรอนิกส์)</span>
+                <span data-lang="en">Data workflow structure (B.Sc. Electronic Business)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3: Stakeholder & Hospitality Relations -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card-redesign">
+            <div class="case-header-strip">
+              <span class="badge bg-success-subtle text-success border small">
+                <span data-lang="th">การดูแลผู้มีส่วนได้ส่วนเสีย</span>
+                <span data-lang="en">Stakeholder Relations</span>
+              </span>
+              <span class="text-muted smaller">
+                <span data-lang="th">มาตรฐานบริการสากล</span>
+                <span data-lang="en">Hospitality Care</span>
+              </span>
+            </div>
+            <div class="case-body-redesign">
+              <h5 class="fw-bold mb-2">
+                <span data-lang="th">การดูแลและต้อนรับแขกผู้มีเกียรติ</span>
+                <span data-lang="en">Welcome Orientations &amp; Community Engagement</span>
+              </h5>
+              <p class="text-muted small flex-grow-1">
+                <span data-lang="th">ดูแลต้อนรับผู้ปกครองและครอบครัวในวันปฐมนิเทศ สร้างบรรยากาศที่อบอุ่นและเป็นกันเอง พร้อมรับฟังและคลี่คลายข้อกังวลอย่างเข้าใจความหลากหลายทางวัฒนธรรม</span>
+                <span data-lang="en">Hosted international families and newcomers during orientations and gatherings with five-star hospitality tact, nurturing positive belonging and diplomatic care.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="tag-soft">
+                  <span data-lang="th">จิตวิทยาบริการ</span>
+                  <span data-lang="en">Empathy &amp; Tact</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">สื่อสารพหุวัฒนธรรม</span>
+                  <span data-lang="en">Cross-Cultural Comms</span>
+                </span>
+                <span class="tag-soft">Guest Relations</span>
+              </div>
+              <div class="border-top pt-2 text-primary smaller fw-medium">
+                <i class="bi bi-heart-fill me-1"></i>
+                <span data-lang="th">ทักษะ: ประสบการณ์ดูแลแขกและรับมือข้อเรียกร้องจากงานโรงแรม</span>
+                <span data-lang="en">International guest relations &amp; diplomatic service</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4: Campus Event Operations (ผลงานตอนมหาวิทยาลัย) -->
+        <!-- Case 4: Campus Event Operations -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card-redesign">
+            <div class="case-header-strip">
+              <span class="badge bg-primary-subtle text-primary border small">
+                <span data-lang="th">การบริหารอีเวนต์มหาวิทยาลัย</span>
+                <span data-lang="en">Campus Event Direction</span>
+              </span>
+              <span class="text-muted smaller">
+                <span data-lang="th">ผู้นำจัดกิจกรรม</span>
+                <span data-lang="en">Lead Organizer</span>
+              </span>
+            </div>
+            <div class="case-body-redesign">
+              <h5 class="fw-bold mb-2">
+                <span data-lang="th">บริหารคิวงาน พิธีการ และกิจกรรมนักศึกษาขนาดใหญ่</span>
+                <span data-lang="en">Large-Scale Student Orientation &amp; Ceremony Operations</span>
+              </h5>
+              <p class="text-muted small flex-grow-1">
+                <span data-lang="th">ควบคุมภาพรวมกิจกรรมประกวดดาวเดือนและพิธีการสำคัญ จัดทำ Run-sheet ประสานงานสถานที่ ระบบแสง-เสียง (AV) ซักซ้อมทีมงาน และบริหารจัดการผู้เข้าร่วมงานกว่า 300+ คน ให้ดำเนินไปอย่างราบรื่นและตรงเวลา</span>
+                <span data-lang="en">Directed the annual University Ambassador Pageant and key institutional ceremonies. Developed comprehensive run-sheets, coordinated venue and AV logistics, led crew rehearsals, and supervised crowd operations for 300+ attendees to ensure seamless, punctual execution.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-4">
+                <span class="tag-soft">
+                  <span data-lang="th">การคุมคิวงาน Run-sheet</span>
+                  <span data-lang="en">Run-sheet Control</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">ประสานสถานที่ &amp; โสตฯ</span>
+                  <span data-lang="en">Venue &amp; AV Logistics</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">บริหารคน 300+</span>
+                  <span data-lang="en">Crowd Management</span>
+                </span>
+              </div>
+              
+              <!-- ส่วนท้ายการ์ด: ระบุบทบาทและปุ่มกดจัดกึ่งกลาง พร้อมระยะเว้นช่องว่างอย่างลงตัว -->
+              <div class="border-top pt-3 mt-auto text-center">
+                <div class="text-primary smaller fw-medium mb-2">
+                  <i class="bi bi-award-fill me-1"></i>
+                  <span data-lang="th">บทบาท: องค์การบริหาร องค์การนักศึกษา (ม.อ.ภูเก็ต)</span>
+                  <span data-lang="en">Role: Student Union (PSU Phuket)</span>
+                </div>
+                
+                <div class="pt-1">
+                  <a href="https://www.facebook.com/share/p/1G39LJ8vKC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary px-3 py-1 rounded-pill smaller shadow-sm">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>
+                    <span data-lang="th">ดูภาพกิจกรรม</span>
+                    <span data-lang="en">View Event</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 5: Corporate & VIP Event Logistics (ผลงานตอนทำงาน) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card-redesign">
+            <div class="case-header-strip">
+              <span class="badge bg-info-subtle text-info-emphasis border small">
+                <span data-lang="th">การประสานงานอีเวนต์องค์กร</span>
+                <span data-lang="en">Corporate Event Coordination</span>
+              </span>
+              <span class="text-muted smaller">
+                <span data-lang="th">การจัดการหน้างาน</span>
+                <span data-lang="en">On-Site Logistics</span>
+              </span>
+            </div>
+            <div class="case-body-redesign">
+              <h5 class="fw-bold mb-2">
+                <span data-lang="th">การจัดงานประชุมผู้บริหารและการต้อนรับแขกคนสำคัญ (VIP)</span>
+                <span data-lang="en">Executive Meetings &amp; VIP Hospitality Coordination</span>
+              </h5>
+              <p class="text-muted small flex-grow-1">
+                <span data-lang="th">ประสานงานสถานที่และจัดเตรียมห้องประชุมผู้บริหาร ดูแลต้อนรับคณะดีไซเนอร์และแขก VIP จัดการเอกสารวาระประชุม การนัดหมาย และอำนวยความสะดวกตลอดกิจกรรมอย่างเป็นมืออาชีพ</span>
+                <span data-lang="en">Coordinated executive meeting spaces, hosted visiting VIPs and designers, arranged official agenda packages, and provided full hospitality and administrative support on-site.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="tag-soft">
+                  <span data-lang="th">การต้อนรับระดับ VIP</span>
+                  <span data-lang="en">VIP Protocol</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">การจัดการห้องประชุม</span>
+                  <span data-lang="en">Meeting Facilities</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">การประสานงานข้ามแผนก</span>
+                  <span data-lang="en">Cross-functional</span>
+                </span>
+              </div>
+              <div class="border-top pt-2 text-primary smaller fw-medium">
+                <i class="bi bi-building-check me-1"></i>
+                <span data-lang="th">บทบาท: Asst.Group Admin and Secretary (เดอะ กันเอง)</span>
+                <span data-lang="en">Role: Asst.Group Admin &amp; Secretary (THE KANEANG)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 6: Vendor Procurement & External Liaison (การดีลเลอร์และประสานงานองค์กร) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card-redesign">
+            <div class="case-header-strip">
+              <span class="badge bg-warning-subtle text-warning-emphasis border small">
+                <span data-lang="th">การจัดซื้อ &amp; เจรจาซัพพลายเออร์</span>
+                <span data-lang="en">Vendor Procurement &amp; Liaison</span>
+              </span>
+              <span class="text-muted smaller">
+                <span data-lang="th">การดีลคู่ค้าและหน่วยงาน</span>
+                <span data-lang="en">Partner Negotiations</span>
+              </span>
+            </div>
+            <div class="case-body-redesign">
+              <h5 class="fw-bold mb-2">
+                <span data-lang="th">การประสานงานภายนอกและการเจรจาจัดซื้อกับดีลเลอร์</span>
+                <span data-lang="en">External Stakeholder Liaison &amp; Vendor Contract Negotiations</span>
+              </h5>
+              <p class="text-muted small flex-grow-1">
+                <span data-lang="th">ทำหน้าที่เป็นคนกลางเชื่อมโยงระหว่างหน่วยงานภายในกับคู่ค้าภายนอก ติดต่อคัดเลือกและเจรจาต่อรองราคากับดีลเลอร์ (ระบบเวที แสง-เสียง เสื้อกิจกรรม สื่อสิ่งพิมพ์ และอาหารจัดเลี้ยง) ควบคุมงบประมาณโครงการให้คุ้มค่าสูงสุด พร้อมกำกับติดตามการส่งมอบงานหน้างานให้ตรงตามมาตรฐานและกำหนดเวลา</span>
+                <span data-lang="en">Liaised between university departments and external commercial vendors. Sourced, evaluated, and negotiated terms with suppliers (AV/stage contractors, apparel, printing, and catering), enforcing strict budget control, milestone delivery, and quality assurance on-site.</span>
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="tag-soft">
+                  <span data-lang="th">การดีลเลอร์ &amp; คัดเลือกคู่ค้า</span>
+                  <span data-lang="en">Vendor Sourcing</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">เจรจาต่อรองสัญญาและราคา</span>
+                  <span data-lang="en">Price Negotiation</span>
+                </span>
+                <span class="tag-soft">
+                  <span data-lang="th">ประสานงานข้ามหน่วยงาน</span>
+                  <span data-lang="en">Cross-Agency Liaison</span>
+                </span>
+              </div>
+              <div class="border-top pt-2 text-primary smaller fw-medium">
+                <i class="bi bi-handshake me-1"></i>
+                <span data-lang="th">บทบาท: ผู้นำกิจกรรมและบริหารงบประมาณโครงการ</span>
+                <span data-lang="en">Role: Event Director &amp; Budget Manager (PSU Phuket Student Union)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Tech & Systems Grid -->
+  <section id="skills" class="py-5 bg-white border-bottom">
+    <div class="container py-4">
+      <div class="row align-items-center mb-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-1">
+            <span data-lang="th">ระบบงานและเครื่องมือดิจิทัล</span>
+            <span data-lang="en">Systems &amp; Digital Competencies</span>
+          </h2>
+          <p class="text-muted small mb-0">
+            <span data-lang="th">ความเชี่ยวชาญเครื่องมือที่พร้อมนำมาปฏิบัติงานได้ทันทีโดยไม่ต้องฝึกสอนใหม่</span>
+            <span data-lang="en">Proficiencies ready for immediate deployment in school and organizational operations</span>
+          </p>
+        </div>
+        <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
+          <span class="tag-soft p-2 px-3">
+            <i class="bi bi-laptop me-1"></i>
+            <span data-lang="th">วุฒิ วท.บ. ธุรกิจอิเล็กทรอนิกส์</span>
+            <span data-lang="en">B.Sc. Electronic Business</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="row g-4 pt-2">
+        <div class="col-md-4">
+          <div class="p-4 rounded-4 border bg-light h-100">
+            <h6 class="fw-bold text-primary mb-3">
+              <i class="bi bi-google me-2"></i>
+              <span data-lang="th">ระบบงานเอกสาร &amp; ปฏิทิน</span>
+              <span data-lang="en">Workspace &amp; Documents</span>
+            </h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tag-soft">Google Calendar</span>
+              <span class="tag-soft">Google Docs / Sheets</span>
+              <span class="tag-soft">Google Drive</span>
+              <span class="tag-soft">Google Forms (RSVP)</span>
+              <span class="tag-soft">Microsoft 365</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 rounded-4 border bg-light h-100">
+            <h6 class="fw-bold text-primary mb-3">
+              <i class="bi bi-palette me-2"></i>
+              <span data-lang="th">การออกแบบสื่อ &amp; จดหมายข่าว</span>
+              <span data-lang="en">Design &amp; Publications</span>
+            </h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tag-soft">Canva</span>
+              <span class="tag-soft">Line OA</span>
+              <span class="tag-soft">Meta Business Suite</span>
+              <span class="tag-soft">Mailchimp / Email Tools</span>
+              <span class="tag-soft">Content Management (CMS)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 rounded-4 border bg-light h-100">
+            <h6 class="fw-bold text-primary mb-3">
+              <i class="bi bi-robot me-2"></i>
+              <span data-lang="th">AI &amp; การตรวจทานภาษา</span>
+              <span data-lang="en">AI &amp; Language Tuning</span>
+            </h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tag-soft">Claude AI (Tone Tuning)</span>
+              <span class="tag-soft">ChatGPT (Copy Editing)</span>
+              <span class="tag-soft">Gemini</span>
+              <span class="tag-soft">Grammarly</span>
+              <span class="tag-soft">
+                <span data-lang="th">ตรวจทาน 2 ภาษา (TH/EN)</span>
+                <span data-lang="en">Bilingual Proofreading</span>
+              </span>
+              <span class="tag-soft">
+                <span data-lang="th">สรุปประเด็นประชุม</span>
+                <span data-lang="en">Meeting Summary Systems</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Two-Column Dossier (Experience & Credentials) -->
+  <section id="dossier" class="py-5" style="background-color: var(--bg-main);">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-2">
+          <span data-lang="th">ประวัติการทำงานและการศึกษา</span>
+          <span data-lang="en">Professional Dossier &amp; Credentials</span>
+        </h2>
+        <p class="text-muted">
+          <span data-lang="th">เส้นทางประสบการณ์ที่ผสมผสานงานประสานงานดิจิทัล งานเลขาบริหาร จิตวิทยาบริการ และภาวะผู้นำ</span>
+          <span data-lang="en">Comprehensive background across digital correspondence, executive secretarial, hospitality, and leadership roles</span>
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Left Column: Work Experience (เรียงครบทั้ง 4 ตำแหน่ง) -->
+        <div class="col-lg-6">
+          <div class="dossier-column">
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <i class="bi bi-briefcase-fill text-primary fs-5"></i>
+              <h5 class="fw-bold mb-0">
+                <span data-lang="th">ประวัติการทำงาน</span>
+                <span data-lang="en">Professional Experience</span>
+              </h5>
+            </div>
+
+            <!-- Position 1: Digital Correspondence -->
+            <div class="dossier-entry">
+              <div class="badge bg-primary-subtle text-primary border smaller mb-1">
+                <span data-lang="th">ก.ค. 2566 - ปัจจุบัน</span>
+                <span data-lang="en">July 2023 - Present</span>
+              </div>
+              <h6 class="fw-bold mb-1">Digital Correspondence</h6>
+              <p class="text-primary fw-medium smaller mb-2">
+                <span data-lang="th">โรงพยาบาลกรุงเทพสิริโรจน์ ภูเก็ต</span>
+                <span data-lang="en">Bangkok Hospital Siriroj, Phuket</span>
+              </p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li class="mb-1">
+                  <span data-lang="th">ตอบข้อซักถามและให้ข้อมูลผู้รับบริการผ่านช่องทางดิจิทัลทุกแพลตฟอร์ม</span>
+                  <span data-lang="en">Handled patient inquiries and provided information across digital platforms.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">ประสานงานข้อมูลระหว่างแผนกภายในองค์กรและพาร์ตเนอร์ภายนอก</span>
+                  <span data-lang="en">Coordinated information with internal departments and external partners.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">จัดการนัดหมายแพทย์ ให้คำแนะนำเบื้องต้นก่อนส่งต่อแพทย์เฉพาะทาง</span>
+                  <span data-lang="en">Managed appointment scheduling and provided initial guidance before referring to specialists.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">ดูแลการตอบกลับรีวิวบน Google Reviews และคอมเมนต์บนโซเชียลมีเดีย</span>
+                  <span data-lang="en">Responded to Google Reviews and social media comments.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">จัดทำสรุปข้อมูลสถิติการนัดหมายและการให้บริการประจำเดือน</span>
+                  <span data-lang="en">Organized monthly appointment data and service statistics.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">ติดตามเคสการชำระเงินระหว่างประเทศและประสานงานผ่านอีเมล</span>
+                  <span data-lang="en">Followed up on international payment cases and coordinated via email.</span>
+                </li>
+                <li>
+                  <span data-lang="th">คัดกรองและกระจายเอกสารอีเมลขาเข้าไปยังหน่วยงานที่เกี่ยวข้องในโรงพยาบาล</span>
+                  <span data-lang="en">Distributed incoming email documents to relevant hospital units.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Position 2: Asst.Group Admin and Secretary -->
+            <div class="dossier-entry">
+              <div class="badge bg-secondary-subtle text-secondary border smaller mb-1">
+                <span data-lang="th">ก.ค. 2565 - มิ.ย. 2566</span>
+                <span data-lang="en">July 2022 - June 2023</span>
+              </div>
+              <h6 class="fw-bold mb-1">Asst.Group Admin and Secretary</h6>
+              <p class="text-muted smaller mb-2">
+                <span data-lang="th">บริษัท เดอะ กันเอง จำกัด</span>
+                <span data-lang="en">THE KANEANG Co.,Ltd.</span>
+              </p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li class="mb-1">
+                  <span data-lang="th">ติดตามกำหนดการผู้บริหารและแจ้งเตือนการประชุมล่วงหน้า</span>
+                  <span data-lang="en">Monitored executives’ schedules and sent reminders for upcoming meetings.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">จัดเตรียมเอกสารและตรวจความพร้อมสำหรับการประชุม</span>
+                  <span data-lang="en">Prepared documents and ensured readiness for meetings.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">บริหารจัดการปฏิทินงานและตารางเวลาประจำวันของผู้บริหาร พร้อมจัดทำรายงาน</span>
+                  <span data-lang="en">Managed executives’ calendars and daily work schedules, including reporting.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">ประสานงานส่งต่อข้อมูลระหว่างผู้บริหารและหัวหน้าแผนกต่าง ๆ</span>
+                  <span data-lang="en">Coordinated information between executives and department heads.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">จัดตารางการประชุมตามคำขอจากหัวหน้าฝ่าย</span>
+                  <span data-lang="en">Scheduled meetings based on requests from department heads.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">ดูแลต้อนรับและอำนวยความสะดวกแก่ผู้บริหารและแขกคนสำคัญ (VIPs &amp; Designers)</span>
+                  <span data-lang="en">Assisted executives and their guests, including designers and VIPs.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">ซัพพอร์ตงานประจำวัน ตอบสนองความต้องการของผู้บริหาร และรายงานปัญหา</span>
+                  <span data-lang="en">Provided daily support, facilitated executive needs, and reported issues.</span>
+                </li>
+                <li>
+                  <span data-lang="th">สื่อสารวาระการประชุมและส่งต่อเอกสารที่เกี่ยวข้องไปยังฝ่ายต่าง ๆ</span>
+                  <span data-lang="en">Communicated meeting agendas and relevant documents to executives and departments.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Position 3: Digital Marketing -->
+            <div class="dossier-entry">
+              <div class="badge bg-secondary-subtle text-secondary border smaller mb-1">
+                <span data-lang="th">เม.ย. 2565 - ก.ค. 2565</span>
+                <span data-lang="en">April 2022 - July 2022</span>
+              </div>
+              <h6 class="fw-bold mb-1">Digital Marketing</h6>
+              <p class="text-muted smaller mb-2">
+                <span data-lang="th">The Marina Phuket Group – Amata Patong &amp; Tony Resort</span>
+                <span data-lang="en">The Marina Phuket Group – Amata Patong &amp; Tony Resort</span>
+              </p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li class="mb-1">
+                  <span data-lang="th">ถ่ายทำและผลิตคอนเทนต์ของโรงแรมเพื่อการประชาสัมพันธ์และการตลาด</span>
+                  <span data-lang="en">Captured hotel content for promotional and marketing purposes.</span>
+                </li>
+                <li class="mb-1">
+                  <span data-lang="th">วางแผนและพัฒนาแคมเปญรายเดือนเพื่อเพิ่มการมีส่วนร่วมและยอดจองห้องพัก</span>
+                  <span data-lang="en">Developed monthly campaigns to drive hotel engagement and bookings.</span>
+                </li>
+                <li>
+                  <span data-lang="th">ตอบข้อซักถามและให้ข้อมูลโปรโมชันแก่ลูกค้าผ่านช่องทางออนไลน์</span>
+                  <span data-lang="en">Responded to online inquiries and provided information to customers regarding promotions.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Position 4: Digital Marketing (Internship) -->
+            <div class="dossier-entry">
+              <div class="badge bg-secondary-subtle text-secondary border smaller mb-1">
+                <span data-lang="th">ม.ค. 2565 - เม.ย. 2565</span>
+                <span data-lang="en">Jan 2022 - April 2022</span>
+              </div>
+              <h6 class="fw-bold mb-1">Digital Marketing (Internship)</h6>
+              <p class="text-muted smaller mb-2">
+                <span data-lang="th">โรงพยาบาลกรุงเทพสิริโรจน์ ภูเก็ต</span>
+                <span data-lang="en">Bangkok Hospital Siriroj, Phuket</span>
+              </p>
+              <ul class="text-muted small ps-3 mb-0">
+                <li class="mb-1">
+                  <span data-lang="th">บริหารจัดการสื่อออนไลน์และตอบข้อซักถามของลูกค้า</span>
+                  <span data-lang="en">Managed online media and responded to customer inquiries.</span>
+                </li>
+                <li>
+                  <span data-lang="th">ดูแลการจำหน่ายวัคซีนโควิด-19 ผ่านระบบ E-Coupon ของโรงพยาบาลสำหรับผู้รับบริการเข็มแรกและเข็มกระตุ้น</span>
+                  <span data-lang="en">Sold COVID-19 vaccines through the hospital’s e-coupon system for customers seeking first or booster doses.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Leadership & Education (เรียงตามลำดับเวลา) -->
+        <div class="col-lg-6">
+          <div class="dossier-column">
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <i class="bi bi-mortarboard-fill text-primary fs-5"></i>
+              <h5 class="fw-bold mb-0">
+                <span data-lang="th">ภาวะผู้นำ &amp; การศึกษา</span>
+                <span data-lang="en">Leadership &amp; Education</span>
+              </h5>
+            </div>
+
+            <!-- Leadership Role 1: ที่ปรึกษานายก อบก. (ปีการศึกษา 2564 - 2565) -->
+            <div class="dossier-entry">
+              <div class="badge bg-primary-subtle text-primary border smaller mb-1">
+                <span data-lang="th">ปีการศึกษา 2564 - 2565</span>
+                <span data-lang="en">ACADEMIC YEARS 2021 - 2022</span>
+              </div>
+              <h6 class="fw-bold mb-1">
+                <span data-lang="th">ที่ปรึกษานายกองค์การบริหาร องค์การนักศึกษา</span>
+                <span data-lang="en">Senior Advisor to the President Student Union</span>
+              </h6>
+              <p class="text-muted smaller mb-2">
+                <span data-lang="th">มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต</span>
+                <span data-lang="en">Prince of Songkla University, Phuket Campus</span>
+              </p>
+              <p class="text-muted small mb-0">
+                <span data-lang="th">ให้คำปรึกษาเชิงยุทธศาสตร์และการดำเนินงานแก่คณะกรรมการบริหารองค์การนักศึกษารุ่นถัดไป ถ่ายทอดองค์ความรู้ด้านการจัดกิจกรรม การบริหารงบประมาณ และการประสานงานกับผู้บริหารมหาวิทยาลัย เพื่อสร้างความต่อเนื่องในการทำงานและร่วมแก้ปัญหาโครงการสำคัญของวิทยาเขต</span>
+                <span data-lang="en">Provided strategic counsel, operational continuity, and mentorship to incoming student union executives. Advised on large-scale event logistics, budget allocation, university leadership liaison, and conflict resolution across two consecutive terms.</span>
+              </p>
+            </div>
+
+            <!-- Leadership Role 2: นายก อบก. (ปีการศึกษา 2563) -->
+            <div class="dossier-entry">
+              <div class="badge bg-warning-subtle text-warning-emphasis border smaller mb-1">
+                <span data-lang="th">ปีการศึกษา 2563</span>
+                <span data-lang="en">ACADEMIC YEAR 2020</span>
+              </div>
+              <h6 class="fw-bold mb-1">
+                <span data-lang="th">นายกองค์การบริหาร องค์การนักศึกษา</span>
+                <span data-lang="en">President Student Union</span>
+              </h6>
+              <p class="text-muted smaller mb-2">
+                <span data-lang="th">มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต</span>
+                <span data-lang="en">Prince of Songkla University, Phuket Campus</span>
+              </p>
+              <p class="text-muted small mb-0">
+                <span data-lang="th">ดำรงตำแหน่งผู้นำสูงสุดของนักศึกษา เป็นตัวแทนประสานงานระหว่างนักศึกษากับผู้บริหารมหาวิทยาลัย บริหารโครงการกิจกรรมนักศึกษาตลอดปีการศึกษา ทั้งในรูปแบบ On-site และ Virtual Events จองและจัดสรรสถานที่ ควบคุมคิวงาน Run-sheet โสตทัศนูปกรณ์ และกำกับดูแลทีมงาน</span>
+                <span data-lang="en">Served as the primary student liaison to university executive leadership. Directed campus event logistics, venue allocations, operational run-sheets, and digital communications across both on-site and remote formats.</span>
+              </p>
+            </div>
+
+            <!-- Education: วท.บ. ธุรกิจอิเล็กทรอนิกส์ -->
+            <div class="dossier-entry">
+              <div class="badge bg-secondary-subtle text-secondary border smaller mb-1">
+                <span data-lang="th">วุฒิการศึกษาระดับปริญญาตรี</span>
+                <span data-lang="en">BACHELOR'S DEGREE</span>
+              </div>
+              <h6 class="fw-bold mb-1">
+                <span data-lang="th">วิทยาศาสตรบัณฑิต (สาขาวิชาธุรกิจอิเล็กทรอนิกส์)</span>
+                <span data-lang="en">Bachelor of Science in Electronic Business</span>
+              </h6>
+              <p class="text-muted smaller mb-2">
+                <span data-lang="th">มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต</span>
+                <span data-lang="en">Prince of Songkla University, Phuket Campus</span>
+              </p>
+              <p class="text-muted small mb-0">
+                <span data-lang="th">ศึกษาโครงสร้างเทคโนโลยีดิจิทัล ระบบธุรกิจอิเล็กทรอนิกส์ และการจัดการข้อมูล เป็นรากฐานสำคัญที่ช่วยให้เรียนรู้ระบบ Content Management Systems (CMS) และระบบ Google Workspace ได้อย่างรวดเร็ว</span>
+                <span data-lang="en">Grounded in digital business platforms and information systems, providing strong technical literacy for school portals, CMS maintenance, and collaborative cloud tools.</span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Executive Contact Card Banner -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="contact-banner-card">
+        <div class="row align-items-center g-4">
+          
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="badge bg-primary-subtle text-primary border px-3 py-2 rounded-pill small mb-3">
+              <i class="bi bi-clock-history me-1"></i>
+              <span data-lang="th">พร้อมเริ่มงาน &amp; สัมภาษณ์</span>
+              <span data-lang="en">Available for Immediate Start</span>
+            </span>
+            <h2 class="fw-bold mb-2">
+              <span data-lang="th">พร้อมสำหรับการสัมภาษณ์และร่วมงาน</span>
+              <span data-lang="en">Available for Conversation &amp; Interview</span>
+            </h2>
+            <p class="text-muted mb-0">
+              <span data-lang="th">ยินดีพูดคุยรายละเอียดเกี่ยวกับตำแหน่งงาน หรือส่งเอกสารเพิ่มเติม ติดต่อได้ผ่านช่องทางนี้ค่ะ</span>
+              <span data-lang="en">Please feel free to connect via direct call, email, or messaging channels.</span>
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-2">
+              
+              <!-- Tel -->
+              <div class="col-sm-6">
+                <a href="tel:0984533750" class="contact-tile">
+                  <i class="bi bi-telephone-fill"></i>
+                  <div>
+                    <div class="smaller text-muted">
+                      <span data-lang="th">เบอร์โทรศัพท์</span>
+                      <span data-lang="en">Phone Number</span>
+                    </div>
+                    <div class="fw-bold small">098-453-3750</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Email -->
+              <div class="col-sm-6">
+                <a href="mailto:sasithon.phudphon04@gmail.com" class="contact-tile">
+                  <i class="bi bi-envelope-fill"></i>
+                  <div>
+                    <div class="smaller text-muted">
+                      <span data-lang="th">อีเมลติดต่อ</span>
+                      <span data-lang="en">Email Address</span>
+                    </div>
+                    <div class="fw-bold small text-truncate" style="max-width: 180px;">sasithon.phudphon04@gmail.com</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- LINE -->
+              <div class="col-sm-6">
+                <a href="https://line.me/ti/p/~__sasi24" target="_blank" rel="noopener noreferrer" class="contact-tile">
+                  <i class="bi bi-line text-success"></i>
+                  <div>
+                    <div class="smaller text-muted">
+                      <span data-lang="th">ไลน์ไอดี</span>
+                      <span data-lang="en">LINE ID</span>
+                    </div>
+                    <div class="fw-bold small">__sasi24</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center border-top bg-light">
+    <div class="container">
+      <small class="text-muted">
+        <span data-lang="th">© 2026 Sasithon Phudphon (Toey Portfolio). All Rights Reserved.</span>
+        <span data-lang="en">© 2026 Sasithon Phudphon (Toey Portfolio). All Rights Reserved.</span>
+      </small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Language Switch Script -->
+  <script>
+    function setLanguage(lang) {
+      document.body.classList.remove('lang-th', 'lang-en');
+      document.body.classList.add('lang-' + lang);
+      document.documentElement.lang = lang;
+      
+      const btnTh = document.getElementById('btn-th');
+      const btnEn = document.getElementById('btn-en');
+      if (btnTh && btnEn) {
+        btnTh.classList.toggle('active', lang === 'th');
+        btnEn.classList.toggle('active', lang === 'en');
+      }
+      
+      localStorage.setItem('toey_preferred_lang', lang);
+    }
+
+    const savedLang = localStorage.getItem('toey_preferred_lang') || 'th';
+    setLanguage(savedLang);
+  </script>
+</body>
+</html>

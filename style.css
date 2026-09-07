@@ -1,0 +1,452 @@
+/* ==========================================================================
+   PORTFOLIO STYLING - COMMUNICATIONS & EVENTS COORDINATOR
+   Candidate: Khun Toey (UWC Thailand Application)
+   Theme: Cool Bright Sky & Deep Midnight Navy (Full Responsive)
+   Typography: Sukhumvit Set (Primary) / Prompt (Fallback)
+   ========================================================================== */
+
+:root {
+  --bg-main: #F5F9FD;           /* พื้นหลังหลักฟ้าไอซ์บลูสว่าง */
+  --bg-card: #FFFFFF;
+  --bg-subtle: #ECF4FB;         /* ฟ้าพาสเทลสำหรับสลับเฉดพื้นหลัง */
+  --bg-tint: #E0F2FE;           /* สีไฮไลต์ฟ้าอ่อนโปร่งใส */
+  
+  --text-dark: #0A2540;         /* สีกรมท่า Deep Midnight Navy คมชัด ภูมิฐาน */
+  --text-muted: #536B88;        /* สีข้อความรอง สีกรมท่าเหลือบเทา */
+  --border-color: #D3E4F3;      /* เส้นขอบสีฟ้าอ่อนสบายตา */
+  
+  --brand-primary: #0284C7;     /* สีไฮไลต์หลัก: ฟ้าสว่าง Bright Sky Blue */
+  --brand-hover: #0369A1;
+  --brand-accent: #38BDF8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Sukhumvit Set", "Prompt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  font-family: "Sukhumvit Set", "Prompt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .btn, .nav-link {
+  font-family: "Sukhumvit Set", "Prompt", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--text-dark);
+}
+
+strong, b, .fw-bold, .fw-semibold {
+  font-family: "Sukhumvit Set", "Prompt", sans-serif;
+  font-weight: 600;
+}
+
+/* =========================================
+   1. Site Header (Responsive Hamburger Navbar)
+   ========================================= */
+.site-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1040;
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-dark) !important;
+  text-decoration: none;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--brand-primary);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 3px var(--bg-tint);
+}
+
+.site-header .nav-link {
+  color: var(--text-muted) !important;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.5rem 0.9rem !important;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.site-header .nav-link:hover {
+  color: var(--brand-primary) !important;
+  background-color: var(--bg-tint);
+}
+
+.header-lang-btn {
+  border: 1px solid var(--border-color);
+  background: transparent;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.header-lang-btn.active {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+}
+
+/* Hamburger Toggler Style */
+.site-header .navbar-toggler {
+  border: 1px solid var(--border-color);
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  color: var(--text-dark);
+  background-color: var(--bg-subtle);
+  transition: all 0.2s ease;
+}
+
+.site-header .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px var(--bg-tint);
+}
+
+/* Mobile Dropdown Styling (จัดชิดซ้ายทั้งหมดเมื่อเป็นแฮมเบอร์เกอร์) */
+@media (max-width: 991.98px) {
+  .site-header .navbar-collapse {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.25rem;
+    margin-top: 0.75rem;
+    box-shadow: 0 16px 36px rgba(10, 37, 64, 0.08);
+    text-align: left;
+  }
+  .site-header .navbar-nav {
+    align-items: flex-start !important; /* บังคับให้รายการทั้งหมดเกาะชิดซ้าย */
+    width: 100%;
+  }
+  .site-header .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+  .site-header .nav-link {
+    padding: 0.65rem 0.85rem !important;
+    border-radius: 8px;
+    text-align: left !important;
+    display: block;
+    width: 100%;
+  }
+  .site-header .nav-link:hover {
+    padding-left: 1.1rem !important;
+  }
+}
+
+/* =========================================
+   Buttons
+   ========================================= */
+.btn-brand-primary {
+  background-color: var(--brand-primary);
+  border: 1px solid var(--brand-primary);
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.65rem 1.4rem;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-brand-primary:hover {
+  background-color: var(--brand-hover);
+  border-color: var(--brand-hover);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+}
+
+.btn-brand-outline {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.65rem 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.btn-brand-outline:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+/* =========================================
+   2. Hero Section
+   ========================================= */
+.hero-split-section {
+  padding: 3.5rem 0 3.5rem;
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-main) 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.badge-role-lead {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--bg-tint);
+  color: var(--brand-primary);
+  padding: 0.35rem 0.9rem;
+  border-radius: 50rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #BAE6FD;
+}
+
+.hero-profile-card {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 1.1rem;
+  box-shadow: 0 16px 36px rgba(10, 37, 64, 0.07);
+}
+
+.hero-photo-frame {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: var(--bg-subtle);
+  aspect-ratio: 4 / 4.6;
+}
+
+.hero-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.floating-profile-badge {
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 0.65rem 1.1rem;
+  box-shadow: 0 12px 24px rgba(2, 132, 199, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* ปรับระยะ Hero สำหรับมือถือ (รูปอยู่ด้านบน) */
+@media (max-width: 991.98px) {
+  .hero-split-section {
+    padding: 2.25rem 0 2.75rem;
+  }
+  .hero-profile-card {
+    max-width: 340px;
+    margin: 0 auto 1.25rem auto;
+  }
+  .floating-profile-badge {
+    bottom: -12px;
+    right: 5px;
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+/* =========================================
+   3. Core Remits (Bento 3-Pillar Cards)
+   ========================================= */
+.remit-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2.2rem 2rem;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.remit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(2, 132, 199, 0.08);
+  border-color: #BAE6FD;
+}
+
+.remit-icon-wrap {
+  width: 52px;
+  height: 52px;
+  background: var(--bg-tint);
+  color: var(--brand-primary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.remit-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+}
+
+/* =========================================
+   4. Case Study Showcase
+   ========================================= */
+.case-card-redesign {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+
+.case-card-redesign:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(10, 37, 64, 0.09);
+  border-color: #BAE6FD;
+}
+
+.case-header-strip {
+  padding: 1rem 1.4rem;
+  background: #FAFCFE;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.case-body-redesign {
+  padding: 1.4rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-soft {
+  background: var(--bg-subtle);
+  color: #0369A1;
+  border: 1px solid var(--border-color);
+  font-size: 0.78rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* =========================================
+   5. Two-Column Dossier
+   ========================================= */
+.dossier-column {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2.2rem 2rem;
+  height: 100%;
+  box-shadow: 0 8px 22px rgba(10, 37, 64, 0.04);
+}
+
+.dossier-entry {
+  position: relative;
+  padding-left: 1.75rem;
+  padding-bottom: 2rem;
+  border-left: 2px solid var(--border-color);
+}
+
+.dossier-entry:last-child {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+.dossier-entry::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 3px var(--bg-tint);
+}
+
+/* =========================================
+   6. Executive Contact Card Banner
+   ========================================= */
+.contact-banner-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 16px 36px rgba(2, 132, 199, 0.07);
+}
+
+@media (max-width: 767.98px) {
+  .contact-banner-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.contact-tile {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.95rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+}
+
+.contact-tile:hover {
+  background: #FFFFFF;
+  border-color: var(--brand-primary);
+  transform: translateY(-2px);
+  color: var(--brand-primary);
+  box-shadow: 0 8px 18px rgba(2, 132, 199, 0.12);
+}
+
+.contact-tile i {
+  font-size: 1.35rem;
+  color: var(--brand-primary);
+}
+
+.smaller {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* =========================================
+   Bilingual Switch Rules
+   ========================================= */
+body.lang-th [data-lang="en"] { display: none !important; }
+body.lang-en [data-lang="th"] { display: none !important; }
